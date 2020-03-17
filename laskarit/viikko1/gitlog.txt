@@ -1,0 +1,97 @@
+samipent@lx9-fuxi030:~/ot_viikko1/tiedostoja$ git log --stat | cat
+commit ec527501e804340debac8ac965aabfa5c6215df5
+Author: Schamppu <sami.pentti@gmail.com>
+Date:   Tue Mar 17 17:02:24 2020 +0200
+
+    vikat muutokset
+
+ tiedostoja/file2             | 0
+ tiedostoja/{file1 => file22} | 0
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 852f8a84b66039831b78ec700e5fb80fa540eaf8
+Author: Schamppu <sami.pentti@gmail.com>
+Date:   Tue Mar 17 16:59:57 2020 +0200
+
+    tiedostoja lisätty
+
+ tiedostoja/file1 | 0
+ tiedostoja/file2 | 0
+ tiedostoja/file3 | 0
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+
+commit acada4d46b06bd5021ffa62fd1ca9331f272c06a
+Author: Schamppu <sami.pentti@gmail.com>
+Date:   Tue Mar 17 16:56:39 2020 +0200
+
+    git add -p tehty
+
+ eka.txt    | 2 +-
+ kolmas.txt | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit 8b76a2b9994526b67781fa80c0fe51001c1f977b
+Author: Schamppu <sami.pentti@gmail.com>
+Date:   Tue Mar 17 16:54:26 2020 +0200
+
+    tiedoston nimeä muutettu
+
+ tiedosto.txt => eka.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit a314b14e698fb7ad5b6ad7a39dcbda6026061c42
+Author: Schamppu <sami.pentti@gmail.com>
+Date:   Tue Mar 17 16:53:25 2020 +0200
+
+    poistettu tiedosto
+
+ toinen.txt | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit f75c7bf52887e3aa815cf2aec465ca6d028bb3f3
+Author: Schamppu <sami.pentti@gmail.com>
+Date:   Tue Mar 17 16:51:39 2020 +0200
+
+    poistettu tekstiä
+
+ tiedosto.txt | 6 +-----
+ 1 file changed, 1 insertion(+), 5 deletions(-)
+
+commit 611ef459d55c6073b8a027458fca5363b7dd05ac
+Author: Schamppu <sami.pentti@gmail.com>
+Date:   Tue Mar 17 16:50:14 2020 +0200
+
+    lisätty tekstiä
+
+ tiedosto.txt | 14 ++++++++++++++
+ 1 file changed, 14 insertions(+)
+
+commit cffe27444f67e0469522f0a69ee44a8bbddb43ad
+Author: Schamppu <sami.pentti@gmail.com>
+Date:   Tue Mar 17 16:46:31 2020 +0200
+
+    lisätty uusia tiedostoja
+
+ kolmas.txt     | 1 +
+ stuff/jees.txt | 1 +
+ toinen.txt     | 1 +
+ 3 files changed, 3 insertions(+)
+
+commit 3ede24cfd6a1fe4b7b56f0d41b1c7f35137d32b1
+Author: Schamppu <sami.pentti@gmail.com>
+Date:   Tue Mar 17 16:43:33 2020 +0200
+
+    muutos ja lisäys
+
+ tiedosto.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+commit 2254ba23e7060eddfbb387fc49355edd5af0b564
+Author: Schamppu <sami.pentti@gmail.com>
+Date:   Tue Mar 17 16:41:57 2020 +0200
+
+    tiedosto.txt luotu
+
+ tiedosto.txt | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
