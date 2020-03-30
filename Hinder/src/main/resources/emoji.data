@@ -1,0 +1,34 @@
+// This file has all data of emojis. You can give an emoji description by adding // to the end. 
+// First string is how it is called inside a text (you write |emojiname and the emoji appears)
+// second string is the file name (the files must be .png format)
+
+// So once more:
+// FIRST    # SECOND    First is what it is called in text with (by writing | and emoji name
+// here it would be |FIRST, and second is the name of the .png file (here it would be SECOND.png).
+
+egg         # emoji0    // Eggplant
+drops       # emoji1    // Sweat drops
+cowboy      # emoji2    // Cowboy hat smiley
+grin        # emoji3    // Face grinnin with tears of joy, the usual laughing emoji
+wink        # emoji4    // Winking smiley face
+heart       # emoji5    // Red heart emoji
+fire        # emoji6    // Fire, lit, you know
+smile0      # emoji7    // The very subtle smiling smiley
+drool       # emoji8    // Drooling face smiley
+evilgrin    # emoji9    // Evil grin with horns, purple one
+moongrin    # emoji10   // A moon grinning and looking top right
+smirk       # emoji11   // Smirking :7 <- style
+fin         # emoji12   // Finland flag
+swe         # emoji13   // Sweden flag
+plane       # emoji14   // Airplane
+globe       # emoji15   // Globe, showing europe
+wine        # emoji16   // A glass of wine
+dancer      # emoji17   // A woman dancing in a red dress
+sushi       # emoji18   // Sushi
+wlifting    # emoji19   // A woman lifting weights
+wrunning    # emoji20   // A woman running
+ghost       # emoji21   // A ghost (snapchat you know)
+bicep       # emoji22   // Bicep flexing
+cool        # emoji23   // Sunglasses and smiling
+pray        # emoji24   // Praying hands
+stop        # emoji25   // Stop symbol
