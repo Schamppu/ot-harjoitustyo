@@ -5,6 +5,8 @@ Tämä tiedosto sisältää enemmän tietoa peliin liittyvien päivitysten tuomi
 > - Anteron dialogi valmis.
 > - Ludwigin dialogi valmis.
 > - Miklun dialogi valmis.
+> - Hahmon tietojen muokkausmahdollisuus aloitettu.
+> - Hahmon tiedot ladataan character.data tiedostosta.
 > - Koodin siirtäminen ja siistiminen hinderUi.java -luokasta aloitettu.
 > - Muutoksia emojien kirjoitustapaan tekstissä. | -merkin sijaan täytyy emojiin liittyvän tekstiviittaukset olla :-merkkien sisällä
 > - Lisätty debugging-toimintoja .profile -tiedostoon. Mikäli tiedostossa on jotain oudosti, osaa peli nyt kertoa että missä on jokin virhe ja mikä virhe on kyseessä jotta sen voi korjata. Tätä laajennetaan vielä.

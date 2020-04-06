@@ -7,4 +7,7 @@
 * 30.3.2020. 8 tuntia. Dokumentaatiota lisätty paljon, lisätty uusia hahmoja. Hahmot osaa myös estää pelaajan. Pieniä päivityksiä käyttöliittymään. Pelin perustoiminnallisuudet ovat nyt kasassa. Pushattu projektista initial commit gittiin ja lisätty pari testiä.
 * 01.4.2020 4 tuntia. Kirjoitettu dialogia Anterolle.
 * 02.4.2020 6 tuntia. Lisätty dialogia Anterolle, Miklulle ja Ludwigille. .profile tiedostot tarkistetaan nyt niitä ladattaessa peliin ja peli antaa niistä tarkkoja virheilmoituksia jos ne on kirjoitettu väärin.
-* 03.4.2020 4 tuntia. Kirjoitettu Miklukke dialogia. Aloitettu koodin siistiminen.
+* 03.4.2020 4 tuntia. Kirjoitettu Miklulle dialogia. Aloitettu koodin siistiminen.
+* 04.4.2020 3 tuntia. Miklun dialogi valmis.
+* 05.4.2020 3 tuntia. Hahmon tietojen muokkausmahdollisuus aloitettu. Hahmon tiedot ladataan nyt tiedostosta.
+* 06.4.2020 3 tuntia. Pientä koodin parantelua ja paljon dokumentointia.
