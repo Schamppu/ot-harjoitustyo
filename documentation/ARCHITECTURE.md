@@ -2,7 +2,7 @@
 ## Rakenne
 Ohjelman rakenne ilmenee seuraavasta kuvasta:
 
-(https://github.com/Schamppu/ot-harjoitustyo/blob/master/documentation/logic.png)
+![alt text](https://github.com/Schamppu/ot-harjoitustyo/blob/master/documentation/logic.png)
 
 Rakenne selitettynä tarkemmin auki:
 * hinder-pakkaus sisältää ohjelman toiminnalle välttämättömimmät luokat, eli HinderUi:n ja HinderMethods:n. Nämä luokat sisältävät suurimman osan ohjelman toiminnallisuudesta, pääsääntöisesti niin että HinderUi sisältää pelkän käyttöliittymän ja HinderMethods siihen liittyviä metodeja.
@@ -15,7 +15,7 @@ Tähän lisätään jatkossa parempi kuvaus käyttöliittymästä.
 ## Sovelluslogiikka
 Ohjelman sovellus- ja luokkalogiikkaa selittää seuraava kuva:
 
-(https://github.com/Schamppu/ot-harjoitustyo/blob/master/documentation/classes.png)
+![alt text](https://github.com/Schamppu/ot-harjoitustyo/blob/master/documentation/classes.png)
 
 Sovelluslogiikkaa tarkemmin auki selitettynä:
 * Main.java ainoastaan käynnistää HinderUi:n. Tämä on välttämätöntä, että JavaFX toimii oikein.
