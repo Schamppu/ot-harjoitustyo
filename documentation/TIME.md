@@ -5,3 +5,6 @@
 * 28.3.2020. 6 tuntia. Lisätty ns "mod support" peliin. Uusia emojeita voi lisätä ilman, että täytyy ohjelmoida. Myös uusia hahmoprofiileita on mahdollista lisätä peliin lisäämällä XXXX.profile -tiedostoja resources-kansioon.
 * 29.3.2020. 8 tuntia. Peliin lisätty mahdollisuus voittaa peli, hävitä peli, blokata käyttäjiä sekä pelin aloitusnäyttö ja mahdollisuus tutkailla omaa profiilia. Pelin perustoiminnallisuudet alkavat olla valmiit.
 * 30.3.2020. 8 tuntia. Dokumentaatiota lisätty paljon, lisätty uusia hahmoja. Hahmot osaa myös estää pelaajan. Pieniä päivityksiä käyttöliittymään. Pelin perustoiminnallisuudet ovat nyt kasassa. Pushattu projektista initial commit gittiin ja lisätty pari testiä.
+* 01.4.2020 4 tuntia. Kirjoitettu dialogia Anterolle.
+* 02.4.2020 6 tuntia. Lisätty dialogia Anterolle, Miklulle ja Ludwigille. .profile tiedostot tarkistetaan nyt niitä ladattaessa peliin ja peli antaa niistä tarkkoja virheilmoituksia jos ne on kirjoitettu väärin.
+* 03.4.2020 4 tuntia. Kirjoitettu Miklukke dialogia. Aloitettu koodin siistiminen.

@@ -22,6 +22,7 @@ Tässä erilaisia linkkejä projektiin liittyvään dokumentaatioon:
 * [changelog](https://github.com/Schamppu/ot-harjoitustyo/blob/master/documentation/CHANGELOG.md). Sisältää laajemmat kuvaukset liittyen pelin eri kehitysversioihin.
 * [todo](https://github.com/Schamppu/ot-harjoitustyo/blob/master/documentation/TODO.md). Sisältää listauksen puuttuvista toiminnallisuuksista.
 * [modding](https://github.com/Schamppu/ot-harjoitustyo/blob/master/documentation/MODDING.md). Ohjeet uuden sisällön lisäämiseen peliin.
+* [sovellusarkkitehtuuri](https://github.com/Schamppu/ot-harjoitustyo/blob/master/documentation/ARCHITECTURE.md). Sovellusarkkitehtuurista diagrammeja ja lisätietoa.
 
 ## Kuvankaappauksia
 Muutama kuvankaappaus versiosta 0.1: [screenshot 1](https://github.com/Schamppu/ot-harjoitustyo/blob/master/screenshots/shot1.png), [screenshot 2](https://github.com/Schamppu/ot-harjoitustyo/blob/master/screenshots/shot2.png), [screenshot 3](https://github.com/Schamppu/ot-harjoitustyo/blob/master/screenshots/shot3.png), [screenshot 4](https://github.com/Schamppu/ot-harjoitustyo/blob/master/screenshots/shot4.png).

@@ -3,7 +3,7 @@
 
 #NAME Yucca
 #AGE 27
-#BIO Girls whos like fast cars and racying is’nt wierd shes a gift from god |pray /n /nNissan Skyline R34 2.5T GTT manuaalivaihteinen 
+#BIO Girls whos like fast cars and racying is’nt wierd shes a gift from god :pray: /n /nNissan Skyline R34 2.5T GTT manuaalivaihteinen
 #PIC yucca.png
 #JOB Automekaanikko
 #STUDY Riihimäen Ammattikoulu
@@ -22,28 +22,8 @@
 
 // HUOM! On ehdottoman tärkeää, että kaikki tulevat samalle riville!
 
-#0 Tjena.
-#OPT Tervehdi #MSG moi, sähän olet aika hauska |grin #REF 1
-#OPT Tervehdi ruotsiksi #MSG moi, sähän olet aika hauska |grin #REF 1
-#OPT Moikkaa tylysti #MSG moi #REF 2
-
-
-#1 "Hauska" ja "  hauska" ,,, setä on kuule ennen kin repinyt tuollaisia kaunottaria hiuksista :))) ja muutakin ,, tehty on
-#REF 4
-
-#2 Jaa Jaa ,,, ollaankos sitä hankala??? Ei "kannata " olla ;)
-#REF 4
-
-#3 Wau sexbätäng ;) ;) ihan alkaa ottamaan eteen minulla ,,, kuvaasi katselen
-#REF 4
-
-#4 Mitäs sulla on nyt päällä ??
-#OPT Normaalit vaatteet #MSG eei mitään kummallista... ihan normaalit vaatteet |smile0 #REF 5
-#OPT Vähäiset vaatteet #MSG pelkät pikkarit |wink muuten olen aivan alasti... #REF 6
-#OPT Älä suostu kertomaan #MSG öö, en halua kertoa mitä mulla on päällä #REF 7
-
-
-
-
-//#NUMBER TEXT
-//#OPT TEXT #MSG TEXT #REF NUMBER
+#0 Terppa :smile0:
+#OPT Tervehdi #MSG no moii :happy0: #REF 1
+#OPT Kysy autosta #MSG siisti auto sulla! paljonko sillä on ajettu? #REF 2
+#OPT Moikkaa tylysti #MSG hei #REF 1
+#OPT Tervehdi englanniksi #MSG hello there, how are you doing? #REF 3

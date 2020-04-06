@@ -1,5 +1,5 @@
 // This class is for creating new dialog responses.
-package hinder;
+package classes;
         
 import java.util.ArrayList;
 

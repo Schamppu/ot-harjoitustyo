@@ -3,7 +3,7 @@
 
 #NAME Pasi
 #AGE 30
-#BIO Work hard, play hard |bicep /n /n MaVe piirimestaruus Valkeakosken kisoissa 2007, penkkimaksimi 165kg. Salil eka, salil vika |cool
+#BIO Work hard, play hard :bicep: /n /n MaVe piirimestaruus Valkeakosken kisoissa 2007, penkkimaksimi 165kg. Salil eka, salil vika :cool:
 #PIC pasi.png
 #JOB Varaosapäällikkö rengaskaupassa
 #STUDY Harvard School of Magic
