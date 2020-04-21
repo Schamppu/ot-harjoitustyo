@@ -1,7 +1,9 @@
 package hinder;
 
 import classes.Profile;
+import static hinder.HinderMethods.createEmojiText;
 import java.io.File;
+import javafx.scene.text.TextFlow;
 import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,7 +14,7 @@ public class hinderMainTest {
     
     @Before
     public void setUp() {
-        profileTest = new Profile(new File("./src/main/resources/Antero.profile"));
+        profileTest = new Profile(new File("./resources/profiles/Antero.profile"));
     }
     
     @Test
@@ -23,6 +25,13 @@ public class hinderMainTest {
     @Test
     public void profileNameLengthTest() {
         assertTrue(profileTest.getName().length() > 0);      
+    }
+    
+    @Test
+    public void emojiTextBasicTest() {
+        TextFlow testFlow = new TextFlow();
+        createEmojiText(testFlow,"test","");
+        assertTrue(testFlow.toString().length() > 0);      
     }
     
 }

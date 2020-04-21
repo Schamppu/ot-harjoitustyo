@@ -3,6 +3,7 @@ package hinder;
 import classes.Profile;
 import static hinder.HinderMethods.createCharacterData;
 import static hinder.HinderMethods.createEmojiText;
+import static hinder.HinderMethods.findFilesFormat;
 import static hinder.HinderMethods.updateProfile;
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -60,6 +61,9 @@ public class HinderUi extends Application {
     //--
     // Here we create the global variables of the application.
     //--
+    
+    public static String dirResource = "./resources/";
+    //public static String dirResource = "";
     
     // How large should the application be?
     public static int appHeight = 720;
@@ -124,7 +128,7 @@ public class HinderUi extends Application {
     public static Scene sceneLose;
     
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage primaryStage) throws IOException {
         
         // Use this to calculate the number of rows of this project, just because data is nice
         //try { calculateRows(); } catch(FileNotFoundException e) { System.out.println("Too bad.") ;};
@@ -133,8 +137,9 @@ public class HinderUi extends Application {
         createCharacterData();
         
         // Setup for static picture variables
-        scnProfilePicture = new ImageView("placeholder.png");
-        characterPic = new ImageView("character.png");
+        
+        scnProfilePicture = new ImageView("pictures/placeholder.png");
+        characterPic = new ImageView("character/character.png");
         
         Image kuva = scnProfilePicture.getImage();
         scnProfilePicture.setImage(kuva);
@@ -345,7 +350,7 @@ public class HinderUi extends Application {
         tutorialPane.setMaxHeight(200);
         tutorialPane.setId("tutorialPane");
         
-        ImageView logo = new ImageView("logo.png");
+        ImageView logo = new ImageView("pictures/logo.png");
         logo.setId("iconFrame");
         
         // Button to go forward
@@ -372,7 +377,7 @@ public class HinderUi extends Application {
         loseText.setMaxWidth(appWidth-40);
         loseText.setLineSpacing(10);
         
-        ImageView lose = new ImageView("lose.png");
+        ImageView lose = new ImageView("pictures/lose.png");
         lose.setId("iconFrame");
         
         // Button to go forward
@@ -400,7 +405,7 @@ public class HinderUi extends Application {
         winScroll.setVbarPolicy(ScrollPane.ScrollBarPolicy.ALWAYS);
         winScroll.setPadding(new Insets(20));
                 
-        ImageView win = new ImageView("victory.png");
+        ImageView win = new ImageView("pictures/victory.png");
         win.setId("iconFrame");
         
         // Button to go keep looking for a match
@@ -567,7 +572,7 @@ public class HinderUi extends Application {
 
             textFlow.setId("boxHim");
 
-            ImageView profilePic = new ImageView(profObjId.getPicture());
+            ImageView profilePic = new ImageView("pictures/"+profObjId.getPicture());
             textFlow.setTranslateX(5);
 
             if (itsHim == false) {
@@ -684,10 +689,13 @@ public class HinderUi extends Application {
     public void createProfiles() {
         
         // First, lets scan all files in /resources folder that end in .profile
-        List<File> files = findFilesFormat(".profile","./src/main/resources/profiles");
+        
+        List<File> files = findFilesFormat(".profile",dirResource+"/profiles");
+        
         for (File file: files) {
             
             chrProfiles.add(new Profile(file));
+            System.out.println(file);
             
         }
         
@@ -696,28 +704,15 @@ public class HinderUi extends Application {
     public void createProfilePictures() {
         
         // First, lets scan all files in /resources folder that end in .profile
-        List<File> files = findFilesFormat(".png","./src/main/resources/character");
+        
+        List<File> files = findFilesFormat(".png",dirResource+"/character");
+        
+        
         for (File file: files) {
-            
-            listProfilePicture.add(new ImageView(file.getName()));
+            listProfilePicture.add(new ImageView("character/"+file.getName()));
             
         }
         
-    }
-    
-    
-    
-    public List<File> findFilesFormat(String format, String directory) {
-        File dir = new File(directory);
-
-        List<File> textFiles = new ArrayList<File>();
-        for (File file : dir.listFiles()) {
-            if (file.getName().endsWith((format))) {
-                textFiles.add(file);
-            }
-        }
-        return textFiles;
-
     }
     
     public void startConversation() {

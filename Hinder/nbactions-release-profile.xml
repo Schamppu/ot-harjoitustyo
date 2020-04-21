@@ -15,13 +15,6 @@
             </properties>
         </action>
         <action>
-            <actionName>CUSTOM-testing</actionName>
-            <displayName>testing</displayName>
-            <goals>
-                <goal>jacoco:report</goal>
-            </goals>
-        </action>
-        <action>
             <actionName>debug</actionName>
             <packagings>
                 <packaging>jar</packaging>
@@ -31,7 +24,7 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:1.5.0:exec</goal>
             </goals>
             <properties>
-                <exec.args>-agentlib:jdwp=transport=dt_socket,server=n,address=${jpda.address} -classpath %classpath ${packageClassName}</exec.args>
+                <exec.args>-agentlib:jdwp=transport=dt_socket,server=n,address=${jpda.address} -classpath %classpath hinder.Main</exec.args>
                 <exec.executable>java</exec.executable>
                 <jpda.listen>true</jpda.listen>
             </properties>
@@ -46,7 +39,7 @@
                 <goal>org.codehaus.mojo:exec-maven-plugin:1.5.0:exec</goal>
             </goals>
             <properties>
-                <exec.args>-classpath %classpath ${packageClassName}</exec.args>
+                <exec.args>-classpath %classpath hinder.Main</exec.args>
                 <exec.executable>java</exec.executable>
             </properties>
         </action>

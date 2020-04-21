@@ -35,6 +35,15 @@ import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
 import javafx.scene.text.TextFlow;
 import classes.Profile;
+import static hinder.HinderUi.dirResource;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URISyntaxException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 public class HinderMethods {
     // This class includes methods that are used by UI, but kept away from the 
@@ -54,7 +63,7 @@ public class HinderMethods {
             if (text.substring(i, i + 1).contains(":")) {
                 for (String emoji: emojiDB.keySet()) {
                     if (i + emoji.length() < text.length() && text.substring(i, i + emoji.length() + 1).contains(emoji) && text.substring(i + emoji.length() + 1, i + emoji.length() + 2).contains(":")) {
-                        ImageView imageView = new ImageView(emojiDB.get(emoji) + ".png");
+                        ImageView imageView = new ImageView("pictures/"+emojiDB.get(emoji) + ".png");
                         imageView.setId("emojiStyle");
                         imageView.setFitHeight(25);
                         imageView.setFitWidth(25);
@@ -127,11 +136,9 @@ public class HinderMethods {
     public static HashMap<String, String> createEmojiData() {
         HashMap<String, String> emojis = new HashMap<>();
         // Here we read the profile file and generate the profile data based on the file.
-        try {
-            Scanner scanner = new Scanner(new File("./src/main/resources/emoji.data"));
-            while (scanner.hasNextLine()) {
-                // Lets start by copying the current file
-                String line = scanner.nextLine();        
+        try (InputStream inputStream = HinderMethods.class.getResourceAsStream("/"+"emoji.data");
+            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
+            for (String line = reader.readLine(); line != null; line = reader.readLine()) {
                 // First, lets remove comment from the line
                 if (line.contains("//")) {
                     line = line.substring(0, line.indexOf("//"));
@@ -142,9 +149,11 @@ public class HinderMethods {
                     emojis.put(line.substring(0, line.indexOf("#")), line.substring(line.indexOf("#") + 1, line.length()));
                 }
             }
-            scanner.close();
+            reader.close();
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+        } catch (IOException ex) {
+            Logger.getLogger(HinderMethods.class.getName()).log(Level.SEVERE, null, ex);
         }
         return emojis;
     }
@@ -160,7 +169,7 @@ public class HinderMethods {
             scnProfileBio.getChildren().removeAll(scnProfileBio.getChildren());
             createEmojiText(scnProfileBio, profObjId.getBio(), "textBio");
             // Picture
-            Image kuva = new ImageView(profObjId.getPicture()).getImage();
+            Image kuva = new ImageView("pictures/"+profObjId.getPicture()).getImage();
             scnProfilePicture.setImage(kuva);
         } else {
             scnProfileName.setText(listProfileName.get(idProfileName) + " (sinä), 22, Vantaa");
@@ -173,11 +182,25 @@ public class HinderMethods {
         }           
     }
     
+    
+    public static List<File> findFilesFormat(String format, String directory) {
+        File dir = new File(directory);
+
+        List<File> textFiles = new ArrayList<File>();
+        for (File file : dir.listFiles()) {
+            if (file.getName().endsWith((format))) {
+                textFiles.add(file);
+            }
+        }
+        return textFiles;
+
+    }
+    
     public static void createCharacterData() {
-        try {
-            Scanner scanner = new Scanner(new File("./src/main/resources/character.data"));
-            while (scanner.hasNextLine()) {
-                String line = scanner.nextLine();
+        
+        try (InputStream inputStream = HinderMethods.class.getResourceAsStream("/"+"character.data");
+            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
+            for (String line = reader.readLine(); line != null; line = reader.readLine()) {
                 String check = ""; // What are we checking?
                 String tag = "#"; // How do we mark the beginning of a tag?
                 List<String> checkList = Arrays.asList("name","job","study","bio");
@@ -202,8 +225,13 @@ public class HinderMethods {
                 
                 }
             }
+            reader.close();
         } catch (FileNotFoundException e) {
+            System.out.println("Boom!");
+            System.out.println("There it was.");
             e.printStackTrace();
+        } catch (IOException ex) {
+            Logger.getLogger(HinderMethods.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
