@@ -28,7 +28,7 @@ Tässä erilaisia linkkejä projektiin liittyvään dokumentaatioon:
 Muutama kuvankaappaus versiosta 0.1: [screenshot 1](https://github.com/Schamppu/ot-harjoitustyo/blob/master/screenshots/shot1.png), [screenshot 2](https://github.com/Schamppu/ot-harjoitustyo/blob/master/screenshots/shot2.png), [screenshot 3](https://github.com/Schamppu/ot-harjoitustyo/blob/master/screenshots/shot3.png), [screenshot 4](https://github.com/Schamppu/ot-harjoitustyo/blob/master/screenshots/shot4.png).
 
 # Release
-Ei toistaiseksi ainuttakaan.
+* [v. 0.21](https://github.com/Schamppu/ot-harjoitustyo/releases/tag/viikko5). Alustavasti suunnitellut toiminnallisuudet sisältävä versio.
 
 ## Ohjeita projektin käynnistämiseen ja komentorivikomentoja
 

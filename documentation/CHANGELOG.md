@@ -1,6 +1,12 @@
 # Changelog
 Tämä tiedosto sisältää enemmän tietoa peliin liittyvien päivitysten tuomista uusista ominaisuuksista.
 
+### 0.21
+> - Testikattavuutta paranneltu.
+> - Kriittisiä bugeja korjattu, minkä takia ohjelma ei toiminut oikein.
+> - Hakemisto uudelleenjärjestetty.
+> - Pieniä parannuksia toiminnallisuuteen ja ensimmäinen release.
+
 ### 0.2
 > - Anteron dialogi valmis.
 > - Ludwigin dialogi valmis.

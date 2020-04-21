@@ -11,3 +11,4 @@
 * 04.4.2020 3 tuntia. Miklun dialogi valmis.
 * 05.4.2020 3 tuntia. Hahmon tietojen muokkausmahdollisuus aloitettu. Hahmon tiedot ladataan nyt tiedostosta.
 * 06.4.2020 3 tuntia. Pientä koodin parantelua ja paljon dokumentointia.
+* 21.4.2020 5 tuntia. Bugeja korjattu, testikattavuutta parannettu, hakemistoja uudelleenjärjestetty. Eka release.
