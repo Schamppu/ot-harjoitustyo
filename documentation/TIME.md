@@ -1,4 +1,7 @@
 # Tuntikirjanpito
+
+Yht. 63 tuntia.
+
 * 23.3.2020. 40 minuuttia. Dokumentaatio aloitettu, alustavat suunnitelmat lisätty.
 * 26.3.2020. 6 tuntia. Pelin perustoiminnallisuudet aloitettu. Keskustelukäyttöliittymä toimii.
 * 27.3.2020. 7 tuntia Keskustelu toimii täysin. Pelissä voi lisätä emojeita tekstiin.
