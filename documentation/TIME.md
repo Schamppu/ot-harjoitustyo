@@ -15,3 +15,4 @@ Yht. 63 tuntia.
 * 05.4.2020 3 tuntia. Hahmon tietojen muokkausmahdollisuus aloitettu. Hahmon tiedot ladataan nyt tiedostosta.
 * 06.4.2020 3 tuntia. Pientä koodin parantelua ja paljon dokumentointia.
 * 21.4.2020 5 tuntia. Bugeja korjattu, testikattavuutta parannettu, hakemistoja uudelleenjärjestetty. Eka release.
+* 28.4.220 4 tuntia. Korjattu isoja bugeja, minkä takia ohjelma todennäköisesti ei ole käynnistynyt muiden tietokoneilla. Nyt pitäisi toimia. Testikattavuutta lisätty.

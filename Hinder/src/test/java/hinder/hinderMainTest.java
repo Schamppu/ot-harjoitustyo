@@ -2,6 +2,9 @@ package hinder;
 
 import classes.Profile;
 import static hinder.HinderMethods.createEmojiText;
+import static hinder.HinderMethods.updateProfile;
+import static hinder.HinderUi.listProfileName;
+import static hinder.HinderUi.scnProfileName;
 import java.io.File;
 import javafx.scene.text.TextFlow;
 import static org.junit.Assert.*;

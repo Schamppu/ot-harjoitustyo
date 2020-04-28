@@ -1,6 +1,13 @@
 # Changelog
 Tämä tiedosto sisältää enemmän tietoa peliin liittyvien päivitysten tuomista uusista ominaisuuksista.
 
+### 0.22
+> - Testikattavuutta paranneltu, kun testit nyt toimivat
+> - Kriittinen epähuomio dokumentaatiossa (Hinder oli kirjoitettu käynnistyskomennossa pienellä H:lla, minkä takia ohjelmaa ei saanut komennolla käynnistymään) korjattu
+> - Muita bugeja korjattu
+> - Ohjelman tulisi nyt toimia myös muilla koneilla.
+> - Dokumentaatiota paranneltu.
+
 ### 0.21
 > - Testikattavuutta paranneltu.
 > - Kriittisiä bugeja korjattu, minkä takia ohjelma ei toiminut oikein.
