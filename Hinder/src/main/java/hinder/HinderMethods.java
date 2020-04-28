@@ -136,7 +136,8 @@ public class HinderMethods {
     public static HashMap<String, String> createEmojiData() {
         HashMap<String, String> emojis = new HashMap<>();
         // Here we read the profile file and generate the profile data based on the file.
-        try (InputStream inputStream = HinderMethods.class.getResourceAsStream("/"+"emoji.data");
+        /*
+        try (InputStream inputStream = HinderMethods.class.getResourceAsStream("emoji.data");
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
             for (String line = reader.readLine(); line != null; line = reader.readLine()) {
                 // First, lets remove comment from the line
@@ -154,6 +155,25 @@ public class HinderMethods {
             e.printStackTrace();
         } catch (IOException ex) {
             Logger.getLogger(HinderMethods.class.getName()).log(Level.SEVERE, null, ex);
+        }       
+                emojis.put(line.subst
+        */
+        try {
+            Scanner scanner = new Scanner(new File(dirResource+"emoji.data"));
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();        
+                // First, lets remove comment from the line
+                if (line.contains("//")) {
+                    line = line.substring(0, line.indexOf("//"));
+                    line = line.replaceAll(" ", "");
+                }
+                // If it is not comment or empty
+                if (line.length() > 0) {   
+                    emojis.put(line.substring(0, line.indexOf("#")), line.substring(line.indexOf("#") + 1, line.length()));
+                }
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("Emoji data file not found.");
         }
         return emojis;
     }
@@ -197,8 +217,10 @@ public class HinderMethods {
     }
     
     public static void createCharacterData() {
-        
-        try (InputStream inputStream = HinderMethods.class.getResourceAsStream("/"+"character.data");
+        File tempFile = new File(dirResource+"character.data");
+        System.out.println(tempFile.exists());
+        /*  EXPERIMENTAL
+        try (InputStream inputStream = HinderMethods.class.getResourceAsStream(dirResource+"character.data");
             BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
             for (String line = reader.readLine(); line != null; line = reader.readLine()) {
                 String check = ""; // What are we checking?
@@ -233,6 +255,62 @@ public class HinderMethods {
         } catch (IOException ex) {
             Logger.getLogger(HinderMethods.class.getName()).log(Level.SEVERE, null, ex);
         }
+        */
+        
+        try {
+            Scanner scanner = new Scanner(new File(dirResource+"character.data"));
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                String check = ""; // What are we checking?
+                String tag = "#"; // How do we mark the beginning of a tag?
+                List<String> checkList = Arrays.asList("name","job","study","bio");
+                for (int i = 0; i < 4; i++) {
+                    if (line.contains(tag + checkList.get(i).toUpperCase())) {
+                        line = line.replaceAll(tag + checkList.get(i).toUpperCase(), "");
+                        switch (checkList.get(i)) {
+                            case "name":
+                                listProfileName.add(line);
+                                break;
+                            case "job":
+                                listProfileJob.add(line);
+                                break;
+                            case "study":
+                                listProfileStudy.add(line);
+                                break;
+                            case "bio":
+                                listProfileBio.add(line);
+                                break;
+                        }
+                    }
+                }
+            }
+        } catch (FileNotFoundException e) {
+            System.out.println("Character data not found!");
+        }            Scanner scanner = new Scanner(dirResource+"character.data");
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                String check = ""; // What are we checking?
+                String tag = "#"; // How do we mark the beginning of a tag?
+                List<String> checkList = Arrays.asList("name","job","study","bio");
+                for (int i = 0; i < 4; i++) {
+                    if (line.contains(tag + checkList.get(i).toUpperCase())) {
+                        line = line.replaceAll(tag + checkList.get(i).toUpperCase(), "");
+                        switch (checkList.get(i)) {
+                            case "name":
+                                listProfileName.add(line);
+                                break;
+                            case "job":
+                                listProfileJob.add(line);
+                                break;
+                            case "study":
+                                listProfileStudy.add(line);
+                                break;
+                            case "bio":
+                                listProfileBio.add(line);
+                                break;
+                        }
+                    }
+                }
+            }
     }
-    
 }
