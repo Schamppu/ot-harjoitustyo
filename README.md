@@ -23,12 +23,14 @@ Tässä erilaisia linkkejä projektiin liittyvään dokumentaatioon:
 * [todo](https://github.com/Schamppu/ot-harjoitustyo/blob/master/documentation/TODO.md). Sisältää listauksen puuttuvista toiminnallisuuksista.
 * [modding](https://github.com/Schamppu/ot-harjoitustyo/blob/master/documentation/MODDING.md). Ohjeet uuden sisällön lisäämiseen peliin.
 * [sovellusarkkitehtuuri](https://github.com/Schamppu/ot-harjoitustyo/blob/master/documentation/ARCHITECTURE.md). Sovellusarkkitehtuurista diagrammeja ja lisätietoa.
-* [käyttöohje](https://github.com/Schamppu/ot-harjoitustyo/blob/master/documentation/QUICKSTART.md). Sovellusarkkitehtuurista diagrammeja ja lisätietoa.
+* [käyttöohje](https://github.com/Schamppu/ot-harjoitustyo/blob/master/documentation/QUICKSTART.md). Yksinkertainen käyttöohje ohjelman käytön aloittamiseen.
+* [testaus](https://github.com/Schamppu/ot-harjoitustyo/blob/master/documentation/TESTING.md). Testaukseen liittyvä dokumentaatio.
 
 ## Kuvankaappauksia
 Muutama kuvankaappaus versiosta 0.1: [screenshot 1](https://github.com/Schamppu/ot-harjoitustyo/blob/master/screenshots/shot1.png), [screenshot 2](https://github.com/Schamppu/ot-harjoitustyo/blob/master/screenshots/shot2.png), [screenshot 3](https://github.com/Schamppu/ot-harjoitustyo/blob/master/screenshots/shot3.png), [screenshot 4](https://github.com/Schamppu/ot-harjoitustyo/blob/master/screenshots/shot4.png).
 
 # Release
+* [Loppupalautus-release](https://github.com/Schamppu/ot-harjoitustyo/releases/tag/loppu). Loppupalautuksen release.
 * [v. 0.21](https://github.com/Schamppu/ot-harjoitustyo/releases/tag/viikko5). Alustavasti suunnitellut toiminnallisuudet sisältävä versio.
 
 ## Ohjeita projektin käynnistämiseen ja komentorivikomentoja
@@ -47,4 +49,10 @@ mvn test
 Ja testikattavuusraportin saa komentorivikomennolla
 ```
 mvn jacoco:report
+```
+
+### Checkstyle
+Checkstyle raportti on mahdollista generoida seuraavalla komennolla:
+```
+mvn jxr:jxr checkstyle:checkstyle
 ```

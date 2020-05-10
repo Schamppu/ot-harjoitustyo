@@ -103,7 +103,6 @@ public class HinderMethods {
 
             // Lets add linebreaks to the text
             while (tmpText.contains("/n")) {
-                //tmpText = tmpText.substring(0,chopText.indexOf("\n"));
                 Text addedText = new Text(tmpText.substring(0, tmpText.indexOf("/n")));
                 if (blockUser == true) {
                     addedText.setTranslateY(-4);
@@ -111,7 +110,6 @@ public class HinderMethods {
                 addedText.setId(textStyle);
                 tmpText = tmpText.substring(tmpText.indexOf("/n") + 2, tmpText.length());
                 addedText.setId(textStyle);
-                //addedText.setTranslateY(-4);
                 textFlow.getChildren().add(addedText);
                 textFlow.getChildren().add(new Text(System.lineSeparator()));
             }
@@ -121,7 +119,6 @@ public class HinderMethods {
                 restText.setTranslateY(-4);
             }
             restText.setId(textStyle);
-            //restText.setTranslateY(-4);
             if (restText.getText().length() > 0) {
                 textFlow.getChildren().add(restText);
             }
@@ -135,29 +132,7 @@ public class HinderMethods {
     
     public static HashMap<String, String> createEmojiData() {
         HashMap<String, String> emojis = new HashMap<>();
-        // Here we read the profile file and generate the profile data based on the file.
-        /*
-        try (InputStream inputStream = HinderMethods.class.getResourceAsStream("emoji.data");
-            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
-            for (String line = reader.readLine(); line != null; line = reader.readLine()) {
-                // First, lets remove comment from the line
-                if (line.contains("//")) {
-                    line = line.substring(0, line.indexOf("//"));
-                    line = line.replaceAll(" ", "");
-                }
-                // If it is not comment or empty
-                if (line.length() > 0) {        
-                    emojis.put(line.substring(0, line.indexOf("#")), line.substring(line.indexOf("#") + 1, line.length()));
-                }
-            }
-            reader.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException ex) {
-            Logger.getLogger(HinderMethods.class.getName()).log(Level.SEVERE, null, ex);
-        }       
-                emojis.put(line.subst
-        */
+
         try {
             Scanner scanner = new Scanner(new File(dirResource+"emoji.data"));
             while (scanner.hasNextLine()) {
@@ -219,43 +194,6 @@ public class HinderMethods {
     public static void createCharacterData() {
         File tempFile = new File(dirResource+"character.data");
         System.out.println(tempFile.exists());
-        /*  EXPERIMENTAL
-        try (InputStream inputStream = HinderMethods.class.getResourceAsStream(dirResource+"character.data");
-            BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream))) {
-            for (String line = reader.readLine(); line != null; line = reader.readLine()) {
-                String check = ""; // What are we checking?
-                String tag = "#"; // How do we mark the beginning of a tag?
-                List<String> checkList = Arrays.asList("name","job","study","bio");
-                for (int i = 0; i < 4; i++) {
-                    if (line.contains(tag + checkList.get(i).toUpperCase())) {
-                        line = line.replaceAll(tag + checkList.get(i).toUpperCase(), "");
-                        switch (checkList.get(i)) {
-                            case "name":
-                                listProfileName.add(line);
-                                break;
-                            case "job":
-                                listProfileJob.add(line);
-                                break;
-                            case "study":
-                                listProfileStudy.add(line);
-                                break;
-                            case "bio":
-                                listProfileBio.add(line);
-                                break;
-                        }
-                    }
-                
-                }
-            }
-            reader.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("Boom!");
-            System.out.println("There it was.");
-            e.printStackTrace();
-        } catch (IOException ex) {
-            Logger.getLogger(HinderMethods.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        */
         
         try {
             Scanner scanner = new Scanner(new File(dirResource+"character.data"));
