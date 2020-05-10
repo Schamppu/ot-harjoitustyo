@@ -17,7 +17,7 @@ Tarkemmat ohjeet siihen miten peliin voi lisätä uutta sisältöä löytyy doku
 
 ## Linkkejä projektin dokumentaatioon
 Tässä erilaisia linkkejä projektiin liittyvään dokumentaatioon:
-* [suunnitelma](https://github.com/Schamppu/ot-harjoitustyo/blob/master/documentation/DESIGN.md). Sisältää alustavan design -dokumentaation.
+* [määrittelydokumentti](https://github.com/Schamppu/ot-harjoitustyo/blob/master/documentation/DESIGN.md). Sisältää alustavan design -dokumentaation (määrittelydokumentin).
 * [aikakirjanpito](https://github.com/Schamppu/ot-harjoitustyo/blob/master/documentation/TIME.md). Sisältää työaikakirjanpidon projektiin liittyen.
 * [changelog](https://github.com/Schamppu/ot-harjoitustyo/blob/master/documentation/CHANGELOG.md). Sisältää laajemmat kuvaukset liittyen pelin eri kehitysversioihin.
 * [todo](https://github.com/Schamppu/ot-harjoitustyo/blob/master/documentation/TODO.md). Sisältää listauksen puuttuvista toiminnallisuuksista.
