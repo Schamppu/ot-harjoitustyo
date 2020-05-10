@@ -1,6 +1,6 @@
 # Tuntikirjanpito
 
-Yht. 63 tuntia.
+Yht. 70 tuntia.
 
 * 23.3.2020. 40 minuuttia. Dokumentaatio aloitettu, alustavat suunnitelmat lisätty.
 * 26.3.2020. 6 tuntia. Pelin perustoiminnallisuudet aloitettu. Keskustelukäyttöliittymä toimii.
@@ -15,4 +15,5 @@ Yht. 63 tuntia.
 * 05.4.2020 3 tuntia. Hahmon tietojen muokkausmahdollisuus aloitettu. Hahmon tiedot ladataan nyt tiedostosta.
 * 06.4.2020 3 tuntia. Pientä koodin parantelua ja paljon dokumentointia.
 * 21.4.2020 5 tuntia. Bugeja korjattu, testikattavuutta parannettu, hakemistoja uudelleenjärjestetty. Eka release.
-* 28.4.220 4 tuntia. Korjattu isoja bugeja, minkä takia ohjelma todennäköisesti ei ole käynnistynyt muiden tietokoneilla. Nyt pitäisi toimia. Testikattavuutta lisätty.
+* 28.4.2020 4 tuntia. Korjattu isoja bugeja, minkä takia ohjelma todennäköisesti ei ole käynnistynyt muiden tietokoneilla. Nyt pitäisi toimia. Testikattavuutta lisätty.
+* 10.5.2020 2 tuntia. Päivitetty dokumentaatiota ja tehty lopullinen release. Lisätty testausdokumentaatio ja sekvenssikaavio pelin keskustelun toiminnasta.
